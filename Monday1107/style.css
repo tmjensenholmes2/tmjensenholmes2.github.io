@@ -1,8 +1,19 @@
+body {
+margin: 0;
+  color: blue;
+  font-size: 5vh;
+}
+
+
 h1 {
   color: red;
   font-size: 1em}
   }
   
 #container {
+  background-color: red;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy00KqxfEu9GMRla9a2O1QyyUJitF_8FoQeBUgZZaL9Q3vLOP2fw");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
