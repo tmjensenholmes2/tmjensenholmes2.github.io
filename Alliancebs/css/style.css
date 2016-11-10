@@ -8,10 +8,3 @@
   width: 100%;
   z-index: 10000;
 }
-
-.menu {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-}
