@@ -13,3 +13,7 @@ li a {
     display: block;
     width: 60px;
 }
+
+.container {
+  position: center;
+}
