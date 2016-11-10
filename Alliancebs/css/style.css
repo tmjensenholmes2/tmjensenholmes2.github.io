@@ -1,5 +1,8 @@
+.header {
+ background-color: red; 
+}
+
 .navigation {
-  background-image: url("img/1900sshop.jpg");
   overflow-y: auto;
   position: fixed;
   left: 0;
