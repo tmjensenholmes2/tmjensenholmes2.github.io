@@ -8,3 +8,8 @@
   width: 100%;
   z-index: 10000;
 }
+
+li a {
+    display: block;
+    width: 60px;
+}
