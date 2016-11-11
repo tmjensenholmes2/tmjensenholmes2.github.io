@@ -15,6 +15,17 @@
  <!-- Latest compiled JavaScript --> 
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
      <script src="js/script.js"></script> 
+    <script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
+  };
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
      <!--<link rel="stylesheet" href="css/style.css"/> -->
   
   <style>
@@ -89,6 +100,8 @@
     </div>
 
     <h2 id="Location">Location</h2>
+    <div id="map">map goes here style="width:400vw; height:400vh;background:blue"</div>
+    
     <p>Include a google map</p>
     
     <h2 id="Services">Services</h2>
