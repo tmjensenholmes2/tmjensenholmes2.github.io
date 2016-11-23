@@ -53,13 +53,26 @@ function myMap() {
       top: 50%;
       left: 0;
     }
-    
-    .navigation{
-      position: fixed;
-      right: 5;
-      top: 0;
-    }
-    
+      
+       nav{
+                    display: block;
+                    float: right;
+                    line-height: 10vh;
+                    margin-right: 7vw;
+                }
+                
+                nav a{
+                    color: #f5f5f5;
+                    font-size: 2.5vh;
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 900;
+                    text-decoration: none;
+                    margin-left: 2vw;
+                }
+                
+                nav a:hover{
+                    text-decoration: underline;
+                    color: red;
         }
         
     a{
@@ -102,18 +115,18 @@ function myMap() {
   <body>
   <header>
    <!--<img src="img/1900shop.jpg" alt="1900's Shop" height="400" weight="400">-->
-    <div class="navigation">
-      <ul>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Jeremy">Jeremy</a></li>
-        <li><a href="#Jamal">Jamal</a></li>
-        <li><a href="#Location">Location</a></li>
-        <li><a href="#Services">Services</a></li>
-        <li><a href="#Products">Products</a></li>
-        <li><a href="#Hours">Hours</a></li>
-        <li><a href="#Special Events">Special Events</a></li>
-      </ul>
-    </div>
+    
+    <nav>
+        <a href="#About">About</a>
+        <a href="#Jeremy">Jeremy</a>
+        <a href="#Jamal">Jamal</a>
+        <a href="#Location">Location</a>
+        <a href="#Services">Services</a>
+        <a href="#Products">Products</a>
+        <a href="#Hours">Hours</a>
+        <a href="#Special Events">Special Events</a>
+      <nav>
+   
   </header>
    
       <div class="container">   
