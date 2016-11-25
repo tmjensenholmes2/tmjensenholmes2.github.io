@@ -1,7 +1,10 @@
-<!DOCTYPE htlm>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<htlm>
+<head>
+    
+     <link href="https://fonts.googleapis.com/css?family=Cherry+Swash:400,700|Diplomata+SC|Prociono|Shrikhand|Trirong:400,400i,700,700i" rel="stylesheet">
+    
+      <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>Alliance Barbershop</title>
@@ -15,151 +18,234 @@
  <!-- Latest compiled JavaScript --> 
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
      <script src="js/script.js"></script> 
-    <script>
-function myMap() {
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {
-    center: new google.maps.LatLng(51.5, -0.2), zoom: 10
-  };
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-
-      
-     <!--<script src="https://www.google.com/maps/place/Alliance+Barbershop+and+Supply/@41.2534934,-95.9529755,17z/data=!3m1!4b1!4m5!3m4!1s0x87938e50bb18e23b:0xaf2a7a0f1ea25cad!8m2!3d41.2534894!4d-95.9507868"></script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>-->
     
-      
-     <!--<link rel="stylesheet" href="css/style.css"/> -->
-         
-    <link href="https://fonts.googleapis.com/css?family=Trirong:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Diplomata+SC" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cherry+Swash:400,700" rel="stylesheet">
-        
-       <!-- font-family: 'Cherry Swash', cursive;
-            font-family: 'Diplomata SC', cursive;-->
-
-  
-  <style>
-  body{
-    margin: 0;
-    }
-    
-    header{
-      background-image:url("img/1900shopsmall.jpg");
-      background-repeat:no-repeat;
-      background-size:cover;
-      min-height:100%;
-      left: 0;
-      margin:top 0;
-    }
-      
-       nav{
-         display: block;
-         float: right;
-         line-height: 10vh;
-         margin-right: 7vw;
-                }
-                
-        nav a{
-          color: #f5f5f5;
-          font-size: 2.5vh;
-          font-family: "Source Sans Pro", sans-serif;
-          font-weight: 900;
-          text-decoration: none;
-          margin-left: 2vw;
-                }
-                
-        nav a:hover{
-           text-decoration: underline;
-           color: red;
+    <style>
+        body{
+            margin:0;
         }
         
-    a{
-      color: black;
-      font-family: 'Diplomata SC', cursive;
-    }
+        header{
+            background-color:#e6f7ff;
+            height:20vh;
+        }
+        
+        #logo{
+            height:20vh;
+            margin-left:5vw;
+        }
+        
+        #mobileMenu{
+            height:20vh;
+            width:20vh;
+            background-color:#99dfff;
+            display:inline-block;
+            float:right;
+            cursor: pointer;
+        }
+        
+        #mobileIcon{
+            height:8vh;
+            width: 8vh;
+            margin-top: 6vh;
+            margin-left: 6vh;
+        }
+        
+        #mobileIcon:hover{
+            padding-top:1vh;
+            padding-left: 1vh;
+        }
+        
+        nav{
+            display:none;
+        }
+        
+        #main{
+            background-color:#e6f7ff;
+            text-align:center;
+        }
+        
+        .stopMargin{
+            height:1px;
+        }
+        
+        h1{
+            font-family: 'Trirong', serif;
+            font-size:5vmin;
+            font-weight:bold;
+            color:#005780;
+            text-align:center;
+            margin-top:10vh;
+            margin-bottom:0;
+        }
+        
+        h2{
+            font-family: 'Prociono', serif;
+            font-size:3.5vmin;
+            color:#005780;
+            text-align:center;
+            margin:0;
+        }
+        h3{
+            font-family: 'Trirong', serif;
+            color:#006999;
+        }
+        table, th, td{
+            border:1px solid black;
+            text-align:left;
+            margin-left:5vw;
+        }
+        
+        #contact{
+            display:inline-block;
+            float:left;
+        }
+        
+        #social{
+            display:inline-block;
+            float:right;
+            height:5vh;
+            margin:0;
+            padding:0;
+        }
+        
+         @media all and (min-width: 1000px){
+                #mobileMenu{
+                    display: none;
+                }
+                
+                #logo{
+                    margin-left: 3vw;
+                }
+                
+                nav{
+                    display: block;
+                    float: right;
+                    line-height: 10vh;
+                    margin-right: 1vw;
+                }
+                
+                nav a{
+                    color: #006999;
+                    font-size: 2.5vh;
+                    font-family: 'Trirong', serif;
+                    font-weight: 900;
+                    text-decoration: none;
+                    margin-left: 2vw;
+                }
+                
+                nav a:hover{
+                    text-decoration: underline;
+                    color: black;
+                }
+              
+            }
+    </style>
     
-    #about{
-      text-align: center;
-      font-family: 'Trirong', serif;
+    </head>
+</htlm>
+<body>
 
-    }
-      
-    #jeremy{
-     text-align: center; 
-     font-family: 'Trirong', serif;
-    }
-    
-    #jamal{
-      text-align: center;
-      font-family: 'Trirong', serif;
-    }
-    
-    h3{
-      text-align: center;
-      font-family: 'Trirong', serif;
-    }
-    .item{
-    
-    }
-    
-    #social{
-    
-    }
-  </head>
-  
-  </style>
- 
- 
-  <body>
-  <header>
-   <!--<img src="img/1900shopsmall.jpg" alt="1900's Shop" height="400" weight="400">-->
-    
-    <nav>
+    <header>
+        <img id="logo" src="img/windowsign.jpg"/>
+        
+        <div id="mobileMenu">
+          <img id="mobileIcon" src="img/icon.png"/>
+        </div>
+        
+      <nav>
         <a href="#About">About</a>
-        <a href="#Jeremy">Jeremy</a>
         <a href="#Jamal">Jamal</a>
+        <a href="#Jeremy">Jeremy</a>
         <a href="#Location">Location</a>
         <a href="#Services">Services</a>
         <a href="#Products">Products</a>
         <a href="#Hours">Hours</a>
         <a href="#Special Events">Special Events</a>
       <nav>
+          
+    </header>
+    
+    <div id="main">
+        <div class="stopMargin"></div>
+        
+    <h1>ALLIANCE BARBERSHOP AND SUPPLY</h1>
+        <br/>
+    <h2>Jamal Evans and Jeremy Holmes, Proprietors</h2>
+    
+    <h3 id="About">About</h3>
+        
+    <p>Alliance Barbershop and Supply is a traditional barbershop located in the Park East Neighborhood of Omaha, Nebraska.  Owners Jamal Evans and Jeremy Holmes have an unrivaled passion for barbering with 10 plus years in the industry.</p>       
+    
+    <p>Offering exceptional haircuts, straight razor shaves, eard trims w/straight edge and banter.</p>      
    
-  </header>
-   
-      <div class="container">   
-      <img src="img/windowsign.jpg" alt="windowsign" height="350"> 
-        <h3>Jeremy Holmes and Jamal Evans, Proprietors</h3>
-
-    <h2 id="About">About</h2>
-    <p>Basic information about the shop</p>
-      </div>
- 
-      <div class="containter">
-    <h2 id="Jeremy">Jeremy</h2>
-         <img src="img/jeremy2.png" alt="Jeremy" height="400" width="400">
-    <p>Information about Jeremy.  Include pics of favorite cuts. Maybe a video</p>
-    <h2 id="Jamal">Jamal</h2>
-    <p>Information about Jamal.  Include pics of favorite cuts.  Maybe a video</p>
-    </div>
-
-    <h2 id="Location">Location</h2>
-   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999.544021436733!2d-95.95298084860381!3d41.25348937917492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87938e50bb18e23b%3A0xaf2a7a0f1ea25cad!2sAlliance+Barbershop+and+Supply!5e0!3m2!1sen!2sus!4v1479934188479" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <h3 id="Jamal">Jamal</h3>
+          
+    <p> <p>Jamal found his passion for barbering in early 2006 while playing collegiate basketball.  After traditional secondary eduction, Jamal attended College of Hair Design in Lincoln, NE.  
+          
+          Jamal co-founded Alliance Barbershop and Supply in 2016.  He excels in every aspect of the barber industry.  Jamal is always looking for opportunities to grow on a personal and professional level.</p></p>
+     
+           <h3 id="Jeremy">Jeremy</h3>
+         <img src="img/jeremy2.png" alt="Jeremy" height="200" width="200">
+          
+    <p>Jeremy found his passion for barbering at his grandfather's funeral.  Jerry Holmes and his father, Bert Holmes were barbers and barbershop owners since the early 1900's.  
+        
+        Jeremy attended Joseph's BarberColege in Omaha, NE; Capitol School of Hairstyling in Omaha, NE and College of Hair Design in Lincoln, NE.
+          
+          Jeremy co-founded Alliance Barbershop and Supply in 2016.  He excels in every aspect of the barber industry.  Jeremy is always looking for opportunities to grow on a personal and professional level.</p>
+          
+     <h3 id="Location">Location</h3>
+          
+    <h3 id="Services">Services</h3>
+          
+           <h3 id="Products">Products</h3>
+       
+    <p>Hair</p>
+          <table>
+          <tr>
+          <th>ITEM</th>
+          <th>PRICE</th>
+          <tr>
+              <td>Uppercut Deluxe</td>
+              <td>$0.00</td>
+          </tr>
+          
+          <tr>
+          <td>Layrite</td>
+          <td>$0.00</td>
+          </tr>
+    <tr>
+        <td>Suavecito</td>
+        <td>$0.00</td>
+          </tr>
+          </table>
+          
+          <p>Beard/Sharving</p>
+          <table>
+              
+      <tr>
+          <th>ITEM</th>
+          <th>PRICE</th>
+          <tr>
+              <td>Suavecito</td>
+              <td>$0.00</td>
+          </tr>
+          <tr>
+          <td>Layrite</td>
+          <td>$0.00</td>
+          </tr>
+          </table>
+              
+          
+           <h3 id="Hours">Hours</h3>
     
+          <p>Tuesday - Friday 9:00 am to 5:00 pm</p>
+        <p>Saturday 8:00 am to 2:00 pm</p>
     
-    <h2 id="Services">Services</h2>
-    <p>Include table with list of services and prices</p>
-    
-    <h2 id="Products">Products</h2>
-    <p>Include table with list of products and prices.  Comment about wholesale pricing?</p>
-    
-    <h2 id="Hours">Hours</h2>
-    
-    <h2 id="Special Events">Special Events</h2>
+    <h3 id="Special Events">Special Events</h3>
+          
     <p>donuts on Saturday?</p>
-    
-              <!--Portfolio Section --> 
+          
+             <!--Portfolio Section --> 
      <section id="portfolio" class="portfolio-section"> 
        <div class="container"> 
          <div class="row"> 
@@ -196,7 +282,7 @@ function myMap() {
                  </div> 
                  <!--SECOND SLIDE--> 
                  <div class="item"> 
-                   <img src="img/pillar(2).jpg" alt="Pillar" height="75"> 
+                   <img src="img/pillar.jpg" alt="Pillar" height="75"> 
                  </div> 
                  <!--THIRD SLIDE--> 
                  <div class="item"> 
@@ -242,24 +328,9 @@ function myMap() {
              </div> 
            </div>  
          </div>  
-       </div>  
-     </section>       
-   
-       <footer> 
-                     
-   <div class="container"> 
-         <div class="row"> 
-           <div class="col-sm-12">                   
-                     
-        <a href="mailto:jleeholmes@cox.net"> Contact Me</a><br /> 
+                   <br/>
+        <a id="contact" href="mailto:jleeholmes@cox.net"> Contact Us</a><br /> 
         <a href="http://facebook.com/jeremy.holmes.54?hc_ref=SEARCH&fref=nf"><image id="social" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYR07KMvDx2kXJK80CX6sFOURdz0fZXZ-My99E_KQjd82C900iPw" /></a> 
-    
-      </div>
-      </div>
-      </div>
-        
-        
-        </footer> 
-
-  </body>
-</html>
+         </div>
+          </section>     
+</body>
