@@ -150,9 +150,7 @@
         <div id="mobileMenu">
           <img id="mobileIcon" src="img/icon.png"/>
         </div>
-             <div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">   
+            
       <nav>
         <a href="#About">About</a>
         <a href="#Jamal">Jamal</a>
@@ -163,29 +161,7 @@
         <a href="#Hours">Hours</a>
         <a href="#Special Events">Special Events</a>
       </nav>
-  </div>
-</div>
-        <script>
-
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
+ 
     </header>
     
     <div id="main">
