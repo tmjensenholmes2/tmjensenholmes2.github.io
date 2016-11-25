@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i|Source+Sans+Pro:400,700,900" rel="stylesheet">
+        <style>
+            body{
+                margin: 0;
+            }
+            
+            header{
+                background-color: #acd373;
+                height: 10vh;
+            }
+            
+            #logo{
+                height: 7vh;
+                margin-left: 5vw;
+                margin-top: 1.5vh;
+            }
+            
+            #mobileMenu{
+                height: 10vh;
+                width: 10vh;
+                background-color: #89a85c;
+                display: inline-block;
+                float: right;
+                cursor: pointer;
+            }
+            
+            #mobileIcon{
+                height: 4vh;
+                width: 4vh;
+                margin-top: 3vh;
+                margin-left: 3vh;
+            }
+            
+            #mobileIcon:hover{
+                padding-top: 1vh;
+                padding-left: 1vh;
+            }
+            
+            nav{
+                display: none;
+            }
+            
+            #main{
+                background-color: #9abd67;
+                height: 90vh;
+                background-image: url('SixteenMobileHomework/4siluetBG.png');
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-position: bottom;
+                text-align: center;
+            }
+            
+            .stopMargin{
+                height: 1px;
+            }
+            
+            #agency{
+                font-family: "Source Sans Pro", sans-serif;
+                font-size: 5vmin;
+                font-weight: bold;
+                color: #f5f5f5;
+                text-align: center;
+                margin-top: 25vh;
+                margin-bottom: 0;
+            }
+            
+            #jakarta{
+                font-family: "Droid Serif", serif;
+                font-size: 3.5vmin;
+                font-style: italic;
+                color: #f5f5f5;
+                text-align: center;
+                margin: 0;
+            }
+            
+            #arrow{
+                height: 3vh;
+                margin-top: 5vh;
+            }
+            
+            #desktopArrow{
+                display: none;
+            }
+            
+            @media all and (min-width: 1000px){
+                #mobileMenu{
+                    display: none;
+                }
+                
+                #logo{
+                    margin-left: 7vw;
+                }
+                
+                nav{
+                    display: block;
+                    float: right;
+                    line-height: 10vh;
+                    margin-right: 7vw;
+                }
+                
+                nav a{
+                    color: #f5f5f5;
+                    font-size: 2.5vh;
+                    font-family: "Source Sans Pro", sans-serif;
+                    font-weight: 900;
+                    text-decoration: none;
+                    margin-left: 2vw;
+                }
+                
+                nav a:hover{
+                    text-decoration: underline;
+                    color: red;
+                }
+                
+                #main{
+                    background-image: url("SixteenMobileHomework/4siluetBGDesktop.png");
+                }
+                
+                #arrow{
+                    display: none;
+                }
+                
+                #desktopArrow{
+                    display: inline-block;
+                    width: 3vw;
+                    margin-top: 12vh;
+                }
+            }
+            
+            @media all and (min-width: 1200px){
+                #logo{
+                    margin-left: 12.5vw;
+                }
+                
+                nav{
+                    margin-right: 12.5vw;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="SixteenMobileHomework/1logo.png" />
+            <div id="mobileMenu">
+                <img id="mobileIcon" src="SixteenMobileHomework/2icon.png" />
+            </div>
+            <nav>
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">SERVICES</a>
+                <a href="#">TEAM</a>
+                <a href="#">WORKS</a>
+                <a href="#">CLIENT SAY</a>
+                <a href="#">BLOG</a>
+                <a href="#">CONTACT</a>
+            </nav>
+        </header>
+        <div id="main">
+            <div class="stopMargin"></div>
+            <h1 id="agency">WE ARE SIXTEEN CREATIVE AGENCY</h1>
+            <br/>
+            <h2 id="jakarta">Based on Jakarta, Indonesia</h2>
+            <img id="arrow" src="SixteenMobileHomework/3arrow.png" />
+            <img id="desktopArrow" src="SixteenMobileHomework/3arrowDesktop.png" />
+        </div>
+    </body>
+</html>
