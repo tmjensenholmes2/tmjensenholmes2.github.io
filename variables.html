@@ -19,6 +19,12 @@
             console.log(name);
             var html = $("#list").html();
             console.log(html);
+            if(name=="Tina"){
+                $("body").html("you win");
+            }else if(name == "nick"){
+                $("body").html("you lost");
+            }
+                
             $("#list").html(html+"<h1>"+name+"</h1>");
         });
         </script>
