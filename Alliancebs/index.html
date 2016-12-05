@@ -60,13 +60,24 @@
             margin-left: 1.75vh;
         }
         
-        #mobileIcon:hover{
-            padding-top:1vh;
-            padding-left: 1vh;
+        nav{
+            display: none;
+            position: fixed;
+            top: 10vh;
+            width:100%;
         }
         
-        nav{
-            display:none;
+        nav a{
+            display:block;
+            color:#f5f5f5;
+            background-color:darkgray;
+            border-bottom: 1px solid #f5f5f5;
+            text-align: right;
+            text-decoration: none;
+            padding: 2vh;
+        }
+        nav a: hoover{
+            background-color: black;
         }
         
         #main{
@@ -192,13 +203,20 @@
              }
              
                 nav{
-                    display: block;
-                    float: right;
-                    line-height: 10vh;
-                    margin-right: 1vw;
+                    position:absolute;
+                    display: block !important;
+                    right:0;
+                    top:0;
+                    line-height:10vh;
+                    margin-right:7v2;
                 }
                 
                 nav a{
+                    float: right;
+                    display: inline;
+                    padding:0;
+                    background-color: transparent;
+                    border-bottom:0;
                     color: #006999;
                     font-size: 1.5vh;
                     font-family: 'Trirong', serif;
@@ -533,5 +551,19 @@
         <a id="contact" href="mailto:jleeholmes@cox.net"> Contact Us</a> 
         <a href="http://facebook.com/jeremy.holmes.54?hc_ref=SEARCH&fref=nf"><image id="social" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYR07KMvDx2kXJK80CX6sFOURdz0fZXZ-My99E_KQjd82C900iPw" /></a> 
          </div>
-          </section>     
+          </section> 
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>        
+    <script>
+         $("#mobileMenu").click(function(e){                
+             $("nav").slideToggle(1000);                
+             e.stopPropagation();            
+         });                        
+        $("#main, header").click(function(e){                
+            $("nav").slideUp(1000);            
+        });                        
+        $("nav a").click(function(e){                
+            e.stopPropagation();           
+        });        
+    </script>
+    
 </body>
