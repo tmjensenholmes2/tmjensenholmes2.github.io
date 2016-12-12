@@ -9,7 +9,12 @@
   }
   
   #cat{
-  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100;
+    z-index: 999999;
   }
   
   div{
@@ -29,12 +34,31 @@
   .sub{
     font-size: 4vw;
   }
-  
-  ul{
-    color: orange;
-    font-size: 6vw;
-    float: right;
-  }
+   
+  nav{
+    position:absolute;
+    display: block !important;
+    right:0;
+    line-height:10vh;
+    margin-right:7v2;
+   }    
+    
+   nav a{
+     float: right;
+     display: inline;
+     padding:0;
+     border-bottom:0;
+     color: orange;
+     font-size: 6vw;
+     font-family:  'Montserrat', sans-serif;
+     text-decoration: none;
+     margin-left: 1vw;
+   }
+                
+   nav a:hover{
+     text-decoration: underline;
+     color: black;
+    }
   
 </style>
 </head>
@@ -45,12 +69,10 @@
   <p class = "sub">only on</p>
   <img id = "netflix" src =""/>
   <nav>
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Schedule</li>
-      <li>Contact<li>
-    </ul>
+      <a href="#Home"></a>
+      <a href="#About"></a>
+      <a href="#Schedule"></a>
+      <a href="#Contact"></a>    
     <img id = "paw" src= ""/>
   </nav>
 </div>
