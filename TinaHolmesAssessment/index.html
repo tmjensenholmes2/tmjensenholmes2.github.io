@@ -66,7 +66,6 @@
                 
    nav a:hover{
      text-decoration: underline;
-     color: black;
     }
   
 </style>
@@ -90,15 +89,9 @@
       <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>        
     <script>
          $(a).hover(function(e){                
-             $("a").slideToggle(1000);                
-             e.stopPropagation();            
+             $("a").animate({up: '2vh'});                            
          });                        
-        $("#main, header").click(function(e){                
-            $("nav").slideUp(1000);            
-        });                       
-        $("nav a").click(function(e){                
-            e.stopPropagation();   
-        });        
+       
     </script>
   
 </body>
