@@ -571,7 +571,8 @@
         $("#main, header").click(function(e){                
             $("nav").slideUp(1000);            
         });                        
-        $("nav a").click(function(e){                
+        $("nav a").click(function(e){  
+             $("nav").slideUp(1000);
             e.stopPropagation();           
         });        
     </script>
