@@ -31,7 +31,7 @@
        <!-- header{
             position:relative;
             background-color:#e6f7ff;
-            height:30vh;
+            height:30vmin;
         }-->
         
         #logo{
@@ -93,7 +93,7 @@
             font-size:4vmin;
             color:#005780;
             text-align:center;
-            margin-top:20vh;
+            margin-top:25%;
         }
         
         h3{
@@ -126,13 +126,13 @@
         }
         
         .prodImg{
-            height:50%;
+            height:20vh;
         }
         
         .desc{
             font-family: 'Trirong', serif;
             color:#006999;
-            font-size:.6em;
+            font-size:2.5vh;
             padding-bottom:1vh;
         }
         
@@ -141,17 +141,18 @@
         }
         .blackboard{
             display:inline-block;
-            height:300px;
-            width:400px;
-            margin-top:0px;
-            opacity:1;
-           
+            opacity: 1; 
+            height: 350px; 
+            width: 425px; 
+            margin-top: 0px; 
+            visibility: visible;
         }
            
         table{
           position:absolute;
           font-family: 'Shrikhand', serif;
-          font-size:2.5vmin;
+          font-family: 'Shrikhand', serif;
+          font-size:2vmin;
           top:50%;
           left:50%;
           transform:translate(-50%,-50%);
@@ -160,13 +161,13 @@
         th{
             color:white;
             text-align:center;
-            font-size:2.5vh;
+            font-size:1.75vh;
         }
         
         td{
             color:white;
             text-align:left;
-            font-size:2.5vh;
+            font-size:2vh;
         }
         
         #contact{
@@ -184,7 +185,6 @@
         
          @media all and (min-width: 1100px){
              
-             
                 #mobileMenu{
                     display: none;
                 }
@@ -196,23 +196,17 @@
                 }
              
                 .prod{
-                    font-family: 'Trirong', serif;
-                    color:#006999;
                     font-size:3.25vh;
                     font-size:3.25vmin;
-                    display: inline-block;
-                    width:30vh;
                     height:25vh;
-                    border:0.5vw solid #005780;  
-                    flex-grow:1;
                 }
+             
                 nav{
                     position:absolute;
                     display: block !important;
-                    right:0;
+                    right:7vw;
                     top:0;
                     line-height:10vh;
-                    margin-right:7v2;
                 }
                 
                 nav a{
@@ -222,7 +216,7 @@
                     background-color: transparent;
                     border-bottom:0;
                     color: #006999;
-                    font-size: 1.25em;
+                    font-size: 1.5vh;
                     font-family: 'Trirong', serif;
                     font-weight: 900;
                     text-decoration: none;
@@ -261,7 +255,7 @@
     
     <div id="main">
         <div class="stopMargin"></div>
-
+        
     <h2>Jamal Evans and Jeremy Holmes, Proprietors</h2>
     
     <h3 id="About">About</h3>
@@ -273,9 +267,9 @@
     <h3 id="Jamal">Jamal</h3>
         <img src="img/jamal.jpg" alt="Jamal" height="200" width="200>">
           
-    <p> <p class="text">Jamal found his passion for barbering in early 2006 while playing collegiate basketball.  After traditional secondary education, Jamal attended College of Hair Design in Lincoln, NE.  
+    <p> <p class="text">Jamal found his passion for barbering in early 2006 while playing collegiate basketball.  After traditional secondary eduction, Jamal attended College of Hair Design in Lincoln, NE.  
           
-          Jamal co-founded Alliance Barbershop and Supply in 2016.  Jamal is always looking for opportunities to grow on a personal and professional level.</p></p>
+          Jamal co-founded Alliance Barbershop and Supply in 2016.  He excels in every aspect of the barber industry.  Jamal is always looking for opportunities to grow on a personal and professional level.</p></p>
      
            <h3 id="Jeremy">Jeremy</h3>
          <img src="img/jeremy2.png" alt="Jeremy" height="200" width="200">
@@ -284,14 +278,14 @@
         
         Jeremy attended Joseph's BarberColege in Omaha, NE; Capitol School of Hairstyling in Omaha, NE and College of Hair Design in Lincoln, NE.
           
-          Jeremy co-founded Alliance Barbershop and Supply in 2016.  He excels in every aspect of the barber industry.</p>
+          Jeremy co-founded Alliance Barbershop and Supply in 2016.  He excels in every aspect of the barber industry.  Jeremy is always looking for opportunities to grow on a personal and professional level.</p>
           
      <h3 id="Location">Location</h3>
           
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999.5438362545597!2d-95.95298084980122!3d41.25349341214742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87938e50bb18e23b%3A0xaf2a7a0f1ea25cad!2sAlliance+Barbershop+and+Supply!5e0!3m2!1sen!2sus!4v1480382012062" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
     <h3 id="Services">Services</h3>
     <div id="svcbb">
-        <img class="blackboard" id="bigthumb32236238" src="img/blackboard.jpg">
+        <img class="img/blackboard">
      
         <table>
           <tr>
@@ -338,7 +332,9 @@
          
         <div class="prod">Upper Cut Monster Hold 
             <br/>
+            <br/>
             <img class="prodImg" src="img/monsterHold.jpg">
+                  <br/>
          <div class="desc">$20.00 Heavy duty was that goes the distance</div>
             <br/>
          </div>
@@ -346,6 +342,7 @@
         <div class="prod">Upper Cut Featherweight 
             <br/>
             <img class="prodImg" src="img/featherweight.jpg">
+                  <br/>
          <div class="desc">$20.00 A light, water-soluble wax with plenty of tack and dry finish for a natural look</div>
             <br/>
          </div>
@@ -353,6 +350,7 @@
         <div class="prod">Upper Cut Deluxe
             <br/><br/>
             <img class="prodImg" src="img/delux.jpg">
+                  <br/>
             <div class="desc">$20.00 A water-soluble product suitable for a diverse range of styles</div>
             <br/>
             </div>
@@ -360,6 +358,7 @@
         <div class="prod">Upper Cut Matte
             <br/><br/>
             <img class="prodImg" src="img/matt.jpg">
+                  <br/>
             <div class="desc">$20.00 A water-soluble, no shine product tht provides a medium hold and a light, natural finish</div>
             <br/>
          </div>
@@ -367,6 +366,7 @@
         <div class="prod">Upper Cut Matte Clay
             <br/>
             <img class="prodImg" src="img/matteClay.jpg">
+                  <br/>
             <div class="desc">$20.00 Makes it easy to achieve a no-fuss messy look</div>
             <br/>
          </div>
@@ -374,6 +374,7 @@
         <div class="prod">Layrite Superhold
             <br/><br/>
             <img class="prodImg"  src="img/superhold.jpg">
+                  <br/>
             <div class="desc">$18.00 Use to shape extremely curly, coarse, and thick hair.  Dries light and clean to keep your hair in place all day</div>
             <br/>
          </div>
@@ -381,6 +382,7 @@
          <div class="prod">Layrite Original
             <br/><br/>
             <img class="prodImg" src="img/originalLayrite.jpg">
+                   <br/>
          <div class="desc">Provides excellent all-day hold and shine for short, wavy, or normal hair</div>
              <br/>
          </div>
@@ -388,6 +390,7 @@
         <div class="prod">Layrite Supershine
             <br/><br/>
             <img class="prodImg" src="img/supershine.jpg">
+                  <br/>
          <div class="desc">$20.00 High shine, shaping and all-day hold.  Create straight, sleek looks</div>
             <br/><br/>
             </div>
@@ -395,6 +398,7 @@
         <div class="prod">Larite Natural Matte Cream
             <br/>
             <img class="prodImg" src="img/naturalMatteCream.jpg">
+                  <br/>
             <div class="desc">$20.00 Lightweight shaping cream adds texture with fleible, all day hold for a range of styles from easy and laid-back to more defined</div>
             <br/>
          </div>
@@ -402,6 +406,7 @@
         <div class="prod">Suavecito Firme Hold
             <br/><br/>
             <img class="prodImg" src="img/firmeHold.jpg">
+                  <br/>
             <div class="desc">$13.00 Classic Sauvecito scent with a firme hold to provide all day hold for various styles</div>
             <br/>
          </div>
@@ -409,6 +414,7 @@
         <div class="prod">Suavecito Original
             <br/><br/>
             <img class="prodImg" src="img/originalSauvecito.jpg">
+                  <br/>
             <div class="desc">$11.00 Classic Sauvecito scent witha medium hold for all day flexibility for various styles</div>
             <br/>
          </div>
@@ -416,6 +422,7 @@
         <div class="prod">Sauvecito Menthol Vanishing Cream
             <br/>
             <img class="prodImg"  src="img/mentholVanishingCream.jpg">
+                  <br/>
             <div class="desc">$10.00 Perfect aqfter shaving with your favoirte straight edge</div>
             <br/>
          </div>
@@ -423,6 +430,7 @@
           <div class="prod">Sauvecito Grooming Spray
             <br/>
             <img class="prodImg" src="img/spray.jpg">
+                    <br/>
             <div class="desc">$10.00 Great to set the base of various styles or to use as a light hold spray</div>
               <br/>
          </div>
@@ -430,6 +438,7 @@
         <div class="prod">Suavecito Pocket Comb
             <br/>
             <img class="prodImg"  src="img/combs.jpg">
+                  <br/>
             <div class="desc">$1.00 Fits perfect in your pockt to restlye that pomp!</div>
             <br/>
          </div>
@@ -563,8 +572,8 @@
         $("#main, header").click(function(e){                
             $("nav").slideUp(1000);            
         });                        
-        $("nav a").click(function(e){  
-             $("nav").slideUp(1000);
+        $("nav a").click(function(e){ 
+             $("nav").slideUp(1000); 
             e.stopPropagation();           
         });        
     </script>
