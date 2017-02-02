@@ -1,8 +1,132 @@
-<!DOCTYPE.html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Title</title>
+<title>Laura Black Massage Therapy</title>
+<style>
+  .stopMargin{
+    height:1px;
+  }
+  
+  </style>
 </head>
 <body>
+  
+   <header>
+        <img id="logo" src="img/needpic.jpg"/>
+        
+        <div id="mobileMenu">
+          <img id="mobileIcon" src="img/icon.png"/>
+        </div>
+            
+      <nav>
+        <a href="#About">xxxxx</a>
+        <a href="#xxxxx">xxxxx</a>
+        <a href="#xxxxx">xxxxx</a>
+        <a href="#xxxxx">xxxxx</a>
+        <a href="#xxxxx">xxxxx</a>
+        <a href="#xxxxx">xxxxx</a>
+        <a href="#xxxxx">xxxxx</a>
+        <a href="#xxxxx">xxxxx</a>
+      </nav>
+ 
+    </header>
+    
+  <div id="main">
+    <div class="stopMargin"></div>
+    
+    <h2>MAIN HEADING INFORMATION</h2>
+    
+    <h3 id="About">About</h3>
+    
+    <p class="text>Information about your background, bio></p>
+        <img src="img/xxxxx.jpg" alt="xxxxx" height="200" width="200>">
+      
+    <h2>SERVICES</h2>
+    <div id="services">
+         <table>
+          <tr>
+            <th>SERVICE</th>
+            <th>PRICE</th>
+          </tr>
+          <tr>
+              <td>ITEM: </td>
+              <td>$</td>
+           </tr>
+           <tr>
+               <td>ITEM: </td>
+               <td>$</td>
+            </tr>
+            <tr>
+                <td>ITEM: </td>
+                <td>$</td>
+            </tr>
+        </table>
+    </div>
+    
+              <h3 id="Products">Products</h3>
+     <div id="container">
+         <div class="insideContainer">
+        <div class="prod">NAME OF PRODUCT 
+            <br/>
+            <br/>
+            <img class="prodImg" src="img/XXX.jpg">
+                  <br/>
+         <div class="desc">DESCRIPTION</div>
+            <br/>
+         </div>
+         </div>
+         <div class="insideContainer">
+        <div class="prod">NAME OF PRODUCT 
+            <br/>
+            <img class="prodImg" src="img/XXX.jpg">
+                  <br/>
+         <div class="desc">DESCRIPTION</div>
+            <br/>
+         </div>
+         </div>
+         <div class="insideContainer">
+        <div class="prod">NAME OF PRODUCT
+            <br/><br/>
+            <img class="prodImg" src="img/XXX.jpg">
+                  <br/>
+            <div class="desc">DESCRIPTION</div>
+            <br/>
+            </div>
+         </div>
+         <div class="insideContainer">
+        <div class="prod">NAME OF PRODUCT
+            <br/><br/>
+            <img class="prodImg" src="img/XXX.jpg">
+                  <br/>
+            <div class="desc">DESCRIPTION</div>
+            <br/>
+         </div>
+         </div>
+    </div>
+    
+      <h3 id="Special Events">Special Events</h3>
+          
+    <p class="text">INFORMATION ABOUT CORPORATE GATHERINGS, BRIDAL SHOWERS ETC.</p>
+    
+            <a id="contact" href="mailto:EMAIL ADDRESS"> Contact Us</a> 
+        <a href="http://FACEBOOK PATH"><image id="social" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYR07KMvDx2kXJK80CX6sFOURdz0fZXZ-My99E_KQjd82C900iPw" /></a> 
+ 
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>  
+    
+    <script>
+         $("#mobileMenu").click(function(e){                
+             $("nav").slideToggle(1000);                
+             e.stopPropagation();            
+         });                        
+        $("#main, header").click(function(e){                
+            $("nav").slideUp(1000);            
+        });                        
+        $("nav a").click(function(e){ 
+             $("nav").slideUp(1000); 
+            e.stopPropagation();           
+        });        
+    </script>
+    
+  </div>
 </body>
 </html>
